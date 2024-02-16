@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.blob {
+  border-radius: 100px;
+  filter: blur(60px); 
+}
+/*
+.blob {
+  border-radius: 100px;
+  filter: blur(60px);
+}*/
+  
+  .yellow {
+    background-color: #EDB74D;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    height: 200px;
+    width: 200px;
+    
+    animation: myyellow 8s infinite ease;
+  }
+  
+  .green {
+    background-color: #6FB18A;
+    position: absolute;
+    top: 80px;
+    right: -20px;
+    height: 200px;
+    width: 250px;
+    
+    animation:mygreen 8s infinite ease;
+  }
+  
+  .red {
+    background-color: #9d174d;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    height: 250px;
+    width: 200px;
+    
+    animation: myred 8s infinite linear;
+  }
+  
+  @keyframes myyellow {
+    0% {top: 200px; left: 100px; transform: scale(1);}
+    30% {top: 300px; left: 150px; transform: scale(1.2);}
+    60% {top: 100px; left: 200px; transform: scale(1.3);}
+    100% {top: 200px; left: 100px; transform: scale(1);}
+  }
+  
+  @keyframes mygreen {
+    0% {top: 80px; right: -20px; transform: scale(1.2);}
+    30% {top: 300px; right: -20px;transform: scale(1);}
+    60% {top: 200px; right: 100px;transform: scale(1);}
+    100% {top: 80px; right: -20px; transform: scale(1.2);}
+  }
+  
+  @keyframes myred {
+    0% {top: 250px; right: 0px; transform: scale(1);}
+    30% {top: 150px; right: 150px;transform: scale(1.4);}
+    60% {top: 250px; right: 100px;transform: scale(1);}
+    100% {top: 250px; right: 0px; transform: scale(1);}
+  }
+  
+  .overlay{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(transparent,rgba(0,0,0,0.5));
+    z-index:1
+  }
+  
+  .hero{
+  
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+    z-index:1;
+   
+    background-position:center
+  }
+
+  .hero:after{
+    content:"";
+    /*background-image:url("https://img.freepik.com/free-photo/noisy-background_1194-7547.jpg?w=740&t=st=1707314118~exp=1707314718~hmac=23694eb537f20f8765bffb7e4034af697046fee57f2198b44bcc5b0ff8f8f7a6");*/
+    background-image:url("https://img.freepik.com/free-photo/smooth-stucco-wall_1194-6638.jpg?w=740&t=st=1707314418~exp=1707315018~hmac=ca5ac4fb94f601e16e9aa0fcc3eac27e903b1d4af69a71fb59285a2242159061");
+    height: 300%;
+    width: 300%;
+    position: fixed;
+    opacity:0.1;
+     animation: animateGrain 8s steps(10) infinite;
+  }
+  
+  @keyframes animateGrain{
+    0%, 100% { transform:translate(0, 0) }
+    10%{
+      transform:translate(-5%,-10%)
+    }
+    20%{
+      transform:translate(-15%,-20%)
+    }
+    30%{
+      transform:translate(-5%,-10%)
+    }
+    40%{
+      transform:translate(-15%,-20%)
+    }
+    
+    50%{
+      transform:translate(-5%,-10%)
+    }
+    60%{
+      transform:translate(-15%,-20%)
+    }
+    70%{
+      transform:translate(-5%,-10%)
+    }
+    80%{
+      transform:translate(-15%,-20%)
+    }
+    90%{
+      transform:translate(-5%,-10%)
+    }
+    100%{
+      transform:translate(-15%,-20%)
+    }
+   
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
