@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import {  FaBars, FaTimes, } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 
+
 const Navbar = () => {
 
   const [nav, setNav] = useState(false);

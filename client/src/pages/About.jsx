@@ -31,9 +31,9 @@ const About = () => {
        </motion.div>
      </div>
      <div className="hidden lg:block h-[500px] w-[500px]  flex-col relative justify-center">
-       <div class="yellow blob"></div>
-       <div class="red blob"></div>
-       <div class="green blob"></div>
+       <div className="yellow blob"></div>
+       <div className="red blob"></div>
+       <div className="green blob"></div>
      </div>
    </div>
    </div>

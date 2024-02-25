@@ -26,19 +26,19 @@ const Home = () => {
               Full-stack web application built with the MERN stack.
             </p>
             <Link
-              class="group text-[16px] lg:text-[20px] transition-all duration-300 ease-in-out "
+              className="group text-[16px] lg:text-[20px] transition-all duration-300 ease-in-out "
               to="/about"
             >
-              <span class=" text-[#303039] pb-1 bg-left-bottom bg-gradient-to-r from-[#EDB74D] to-[#EDB74D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+              <span className=" text-[#303039] pb-1 bg-left-bottom bg-gradient-to-r from-[#EDB74D] to-[#EDB74D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                 &#8594; about application
               </span>
             </Link>
           </motion.div>
         </div>
         <div className="hidden lg:block h-[500px] w-[500px]  flex-col relative justify-center">
-          <div class="yellow blob"></div>
-          <div class="red blob"></div>
-          <div class="green blob"></div>
+          <div className="yellow blob"></div>
+          <div className="red blob"></div>
+          <div className="green blob"></div>
         </div>
       </div>
       </div>
