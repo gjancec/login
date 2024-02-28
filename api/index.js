@@ -33,13 +33,13 @@ mongoose
   });
 
 
-
+const port=process.env.PORT;
 // Routes
-app.listen(3001, () =>{
-    console.log('Server listening on port 3001');
+app.listen(port, () =>{
+    console.log(`Server listening on ${port}`);
 })
 
-
+app.use("/", userRoutes)
 
 //Route for User  
 app.use("/api/user", userRoutes);
