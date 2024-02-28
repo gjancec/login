@@ -14,11 +14,11 @@ const app=express();
 //middleware
 app.use(cors(
   {
-    origin:["https://login-auth-five.vercel.app"],
-    methods:["POST", "GET"],
-    credentials:true
+    origin: true,
+   credentials:true
   }
 ));
+
 
 // for testing post json from browser to api
 app.use(express.json());
