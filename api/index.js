@@ -11,14 +11,21 @@ import cookieParser from 'cookie-parser';
 
 //connect to express app
 const app=express();
+//middleware
+app.use(cors(
+  {
+    origin:["https://login-auth-five.vercel.app"],
+    methods:["POST", "GET"],
+    credentials:true
+  }
+));
 
 // for testing post json from browser to api
 app.use(express.json());
 
 app.use(cookieParser());
 
-//middleware
-app.use(cors());
+
 
 //connect to MongoDB
 dotenv.config();
