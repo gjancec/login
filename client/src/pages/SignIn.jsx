@@ -26,7 +26,7 @@ const SignIn = () => {
       dispatch(signInStart());
       // setLoading(true);
       //setError(false);
-      const res = await fetch("/api/auth/signin", {
+      const res = await fetch("https://login-server-virid.vercel.app/api/auth/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
